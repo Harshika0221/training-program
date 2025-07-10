@@ -1,0 +1,108 @@
+/* This is universal selector */
+*{
+    color :rgb(140, 15, 36)
+}
+/* This is body(element) selector */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e28888;
+    color: #c79bb5;
+    margin: 0;
+    padding: 20px;
+}
+/* This is element selector */
+h1 {
+    color: #92c0f1;
+}
+/* This is class selector */
+.my-class {
+    color: #f1c0c0;
+    font-size: 20px;
+}
+/* This is id selector */
+#my-id {
+    color: #f1c0c0;
+    font-size: 40px;
+}
+/* This is id selector */
+#container {
+    background-color: #dcd4d4;
+    padding: 20px;
+    border-radius: 5px;
+}
+/* This is class selector */
+.heading {
+    color: #ad7070;
+    font-size: 30px;
+    text-align: center;
+}
+div{
+    background-color: #c79bb5;
+    display: inline;
+
+}
+button{
+    display: block;
+}
+div{
+    width: 100px;
+    height: 100px;  
+    margin: 25px;
+    padding: 25px;
+    display:inline-block;
+}
+#box2{
+   
+    display:none;
+}
+div{
+    background-color: #f1c0c0;
+    border: 2px solid #ad7070;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    
+
+}
+.square1 {
+
+    position: static;
+    
+}
+.square2 {
+    position: relative;
+    top: 0px;
+    left: 5px;
+}
+.square3 {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+.square4 {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+.square5 {
+    position: sticky;
+    top: 0px;
+    
+}
+p:first-child {
+    color: #6f3434;
+    font-size: 20px;
+}
+h1:nth-child(odd) {
+    color: #640a51;
+    font-size: 20px;
+}
+p::first-letter {
+    color: #ff03c8;
+    font-size: 20px;
+}
+h1::before {
+    content: "Life is a journey: ";
+    color: #7d1767;
+    font-size: 20px;
+}
