@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  height: 100vh;
+  background-color: #f5f7fa;
+  color: #333;
+  overflow: hidden;
+}
+
+/* ==== Left Sidebar (Fixed) ==== */
+.sidebar {
+  width: 20%;
+  background-color: #111827;
+  color: white;
+  padding: 30px 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  border: 3px solid #4f46e5;
+  object-fit: cover;
+}
+
+.profile h2 {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.tagline {
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+.misc-list {
+  list-style: none;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ==== Main Content (Scrollable) ==== */
+.main-content {
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 40px;
+  overflow-y: auto;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.section {
+  margin-bottom: 60px;
+}
+
+.section h2 {
+  font-size: 28px;
+  color: #111827;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #4f46e5;
+  display: inline-block;
+}
+
+.section p, .section li {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* ==== Project Grid ==== */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  opacity: 0.6; /* Lowered for project description visibility */
+}
+
+.project-desc {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  font-size: 0.95em;
+  text-align: center;
+}
+
+/* ==== Skills List ==== */
+.skills-list {
+  list-style: square;
+  padding-left: 20px;
+}
+
+/* ==== Right Navigation (Fixed) ==== */
+.section-nav {
+  width: 20%;
+  background-color: #1f2937;
+  color: white;
+  padding: 30px 20px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.section-nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.section-nav a:hover {
+  background-color: #374151;
+}
