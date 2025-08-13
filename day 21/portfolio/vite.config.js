@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/training-program-/'   // <-- IMPORTANT
+  base: 'D:\html tutorial\training-program-\day 21\portfolio'   // <-- IMPORTANT
 })
