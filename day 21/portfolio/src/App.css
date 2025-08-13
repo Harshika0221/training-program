@@ -1,170 +1,42 @@
-/* Reset and Base */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #fdfbfb, #ebedee);
-  color: #333;
-  line-height: 1.6;
-}
-
-/* Header */
-.header {
-  background: linear-gradient(135deg, #7f00ff, #e100ff);
-  color: white;
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
   text-align: center;
-  padding: 2.5rem 1rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-.header h1 {
-  font-size: 3rem;
-  font-weight: bold;
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-.header p {
-  margin-top: 0.5rem;
-  font-size: 1.2rem;
-  opacity: 0.95;
-}
-
-nav {
-  margin-top: 1.2rem;
-}
-
-nav a {
-  margin: 0 12px;
-  padding: 8px 16px;
-  color: white;
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 20px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
-
-nav a:hover {
-  background: white;
-  color: #7f00ff;
-}
-
-/* Sections */
-section {
-  padding: 2.5rem;
-  max-width: 1100px;
-  margin: auto;
-}
-
-section h2 {
-  font-size: 2.2rem;
-  color: #222;
-  margin-bottom: 1.5rem;
-  position: relative;
-}
-
-section h2::after {
-  content: '';
-  width: 70px;
-  height: 4px;
-  background: linear-gradient(135deg, #7f00ff, #e100ff);
-  position: absolute;
-  left: 0;
-  bottom: -8px;
-  border-radius: 2px;
-}
-
-/* About Me */
-#about {
-  background: #fff8f0;
-  border-radius: 12px;
-  padding: 2rem;
-  box-shadow: 0 3px 15px rgba(0,0,0,0.05);
-}
-
-#about p {
-  margin-bottom: 1rem;
-  font-size: 1.05rem;
-}
-
-/* Projects Section */
-.project-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-}
-
-.project-card {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
-  flex: 1 1 calc(50% - 1.5rem);
-  transition: all 0.3s ease;
-  cursor: pointer;
-  border-left: 6px solid transparent;
-}
-
-.project-card:hover {
-  transform: translateY(-6px);
-  border-left: 6px solid #7f00ff;
-  box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
-}
-
-.project-card h3 {
-  margin-bottom: 0.5rem;
-  color: #7f00ff;
-}
-
-/* Contact Section */
-#contact {
-  background: #f0f9ff;
-  border-radius: 12px;
-  padding: 2rem;
-  box-shadow: 0px 3px 15px rgba(0,0,0,0.05);
-}
-
-#contact a {
-  color: #0077ff;
-  font-weight: 500;
-  text-decoration: none;
-}
-
-#contact a:hover {
-  text-decoration: underline;
-}
-
-/* Feedback Section */
-#feedback {
-  background: linear-gradient(135deg, #ffe29f, #ffa99f, #ff719a);
-  border-radius: 12px;
-  padding: 2rem;
-  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
-  font-style: italic;
-  color: #222;
-}
-
-/* Footer */
-footer {
-  background: #1f1f1f;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
-  font-size: 0.9rem;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .project-card {
-    flex: 1 1 100%;
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
   }
-
-  nav a {
-    display: inline-block;
-    margin: 5px;
+  to {
+    transform: rotate(360deg);
   }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
 }
