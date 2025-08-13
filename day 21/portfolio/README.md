@@ -1,12 +1,38 @@
-# React + Vite
+# 🌟 Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and interactive personal portfolio website built with **HTML**, **CSS**, and **JavaScript** to showcase my projects, skills, and contact details.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Features
 
-## Expanding the ESLint configuration
+- **Responsive Design** – Works seamlessly on mobile, tablet, and desktop devices.
+- **Project Showcase** – Highlight personal and professional projects with descriptions and links.
+- **About Me Section** – Share details about my background, skills, and experience.
+- **Contact Form** – Easy way for visitors to get in touch.
+- **Smooth Animations** – Subtle transitions for a modern look.
+- **Fast Loading** – Optimized for performance.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** HTML5, CSS3, JavaScript (Vanilla)
+- **Build Tool:** Vite (for development & production builds)
+- **Deployment:** Netlify / GitHub Pages
+
+---
+
+## 📂 Project Structure
+
+```plaintext
+portfolio/
+│── public/           # Static assets
+│── src/
+│   ├── assets/       # Images, icons, etc.
+│   ├── css/          # Stylesheets
+│   ├── js/           # JavaScript files
+│   └── index.html    # Main HTML file
+│── package.json
+│── vite.config.js
+│── README.md
